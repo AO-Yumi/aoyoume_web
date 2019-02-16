@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head><title>Untitled(5) - Vorbis FAQ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Vorbis FAQ">
+<meta name="keywords" content="Audio,Sound,Ogg,Vorbis,FAQ">
+<link rel="stylesheet" href="../default.css" type="text/css"></head>
+<body>
+<h1>Ogg
+Vorbis FAQ (Japanese)</h1>
+<small><br>
+<br>
+<h2>「一般編」<br>
+</h2>
+<span style="font-weight: bold;">Q.
+　Ogg Vorbisってなに？<br>
+　</span><a href="http://www.vorbis.com/">OggVorbis</a>はMP3やWMA、AACなどと同様な非可逆音声圧縮規格
+です。これらの既存の規格との違いはフリーでオープンな規格であるということです。
+基本となる参照ライブラリはBSDライセンスにほぼ準じる形で提供されており、自由に自前のソフトに組み込んだり、改造したりすることができます。また、その際料金を支払う義務はありません。他のコーデックやフォーマットよりも権利上の制約が緩いのがOgg Vorbisの大きな特徴の一つです。<br>
+<span style="text-decoration: underline;"><span style="font-weight: bold;"><br>
+</span></span><span style="font-weight: bold;">Q.
+　名前の意味はなんですか<br>
+</span>　Oggは色々なデータを入れる入れ物です。Vorbisは非可逆の圧縮音声形式を指します。これらは固有名詞で、意味を持った単語の短縮形ではありません。<br>
+　Oggに入れられるものとしてはVorbis以外に、<a href="http://www.theora.org/">Theora(Ogg
+Theora)</a>や<a href="http://flac.sourceforge.net/">Ogg
+FLAC(FLAC)</a>などがあります。<span style="font-weight: bold;"><br>
+　<br>
+</span><span style="font-weight: bold;">Q.　Ogg Vorbisの音質ってどうなの？<br>
+</span>　音質は悪くありません。ただ人の耳はそれぞれ異なるので、ぜひご自身でお試しください。一般的には低いビットレート(64kbps～128kbps)において、他の形式より優位と感じる人が多いようです。またエンコーダ(圧縮プログラム)によっても大きな差が生じます。出来れば、色々なエンコーダを試されるのが良いでしょう。<span style="font-weight: bold;"><br>
+<br>
+Q.　ビットレート(１秒あたりの容量)が一定にならないんだが<br>
+</span>　Ogg
+Vorbisは品質(Quality)ベースのVBR(可変ビットレート)を基本としています。そのためビットレートは一定になりません。もし一定のビットレートが必要ならばビットレート管理モード(bitrate management mode)を使ってください。ただし、この場合でもMP3のようなフレームベースでの固定ビットレート(CBR)エンコードは(他の多くのフォーマットと同様に)不可能です。<br>
+　またビットレートの制限を強くするほど、通常音質面では不利になります。その上、エンコードスピードは遅くなるでしょう。Vorbisの基本となるQualityモード(VBR)の使用がベストです。<span style="font-weight: bold;"><br>
+<br>
+Q.</span><span style="font-weight: bold;">　非可逆音声圧縮って結局なんなの？<br>
+</span>　非可逆という言葉には可逆ではない（可逆の否定）いう意味があります。簡単に言えば、完全には元に戻らない音声圧縮ということです。そして完全には戻らない、ということはオリジナルと全く同じ音質にはなりえないということです。し
+かしながら、聴覚上のダメージをできるだけ抑えつつデータを小さくすることはできます。なぜならば、人間の耳というのはある部分では敏感な反面、非常に鈍感に働く面があるからです。Vorbisを始めとする<a href="lossy_format.html">モダンな
+フォーマット</a>のエンコーダは、そういった人の聴覚の特性を突くことで主観の音質をできるだけ保ちながら圧縮しようとします。<br>
+　ちなみに全く質を落とさない可逆圧縮というものも存在しますが、一般的に大きな圧縮率は望めません。可逆音声圧縮規格としてはFLACやMonkey's Audioなどが比較的ポピュラーですが、圧縮率はオリジナルの30%から70%台といったところです。<span style="font-weight: bold;"><br>
+<br>
+Q.　Ogg ファイルを聴いてみたいんだけど、どうすれば聴ける？<br>
+</span>　一番手軽なのは、Ogg Vorbis対応のソフトウェアプレイヤーを使うことです。対応しているプレイヤーは様々なプラットフォーム向けに沢山あるので、ここで全てを紹介することはできません。インターネット検索エンジンで"Ogg Vorbis プレイヤー"と打ち込んで検索してみてください。<br>
+　また、まだまだ絶対数は少ないもののハードウェアプレイヤーも存在します。例えば携帯プレイヤーで外でOgg Vorbis形式の音声ファイルを再生することも可能です。この辺も検索エンジンから"Ogg 携帯プレイヤー"などと検索すると色々なものが見つかるでしょう。<br>
+　<small>希少ではありますが、Oggという拡張子でもVorbisでないファイルも存在するので注意が必要です。<br>
+<br>
+</small><span style="font-weight: bold;">Q.　いつも使っているプレイヤーでOgg Vorbis音声を聞きたい<br>
+　</span>WindowsのWMPで再生するためにはDirectShowフィルタをインストールする必要があります。その中でも現在活発に開発されているものの一つが<a href="http://www.xiph.org/dshow/"><span style="text-decoration: underline;">Xiph.Org</span>のDSフィルター</a>です。<br>
+　MacintoshのiTunes(Windows版でも可)で再生する場合には<a href="http://sourceforge.net/project/showfiles.php?group_id=41359">QuickTime用のプラグイン</a>をインストールします。<br>
+　また他にもプラグイン形式でVorbis再生に対応できるソフトウェアは多いです。デフォルトで再生できなくても、検索エンジンで調べてみると良いかも知れません。<br>
+<span style="font-weight: bold;"><br>
+Q.　Ogg VorbisのOggファイルを作ってみたいのだけど･･･<br>
+</span>　エンコーダと呼ばれるプログラムを使ってOggファイルを作成することができます。プレイヤーほどではないですが、このエンコーダソフトも沢山の種類が存在します。身近なところではOggencというコマンドラインで使うツールがありますが、これは初心者向きとは言えません。そこで検索エンジンを使い"Ogg Vorbis エンコーダ"として検索してみてください。多くのOgg Vorbisエンコーダがリストアップされるでしょう。CDからOggファイルを作りたい方は"Ogg Vorbis リッパー"としてもよいでしょう。<br>
+<span style="font-weight: bold;">　<br>
+</span><span style="font-weight: bold;">
+Q.　音質のいいエンコーダを教えて！<br>
+</span>　音質はエンコーダに含まれるエンコードライブラリによって決まります。エンコードライブラリには様々なものがありますが、全てはXiph.Orgの参照エンコード・デコードライブラリであるlibvorbisから派生したものです。しかしながら音質の差はライブラリ間で小さくありません。このサイトでのお勧めは当然のことながら、"aoTuV"版libvorbisを使用したエンコーダです。ただし、貴方の耳にとって最も良いかは解りません。音質とは非常に主観的なものなので、できれば幾つかのエンコーダを使用して、Oggファイルを聞き比べて選択されるのが最適でしょう。<span style="font-weight: bold;"><br>
+</span><span style="font-weight: bold;"><br>
+</span><br>
+<h2>「開発編」</h2>
+<span style="font-weight: bold;">Q.
+　Ogg Vorbisを自前のプログラムで使いたい。どうすればいいのか。<br>
+</span>　<a href="http://xiph.org/downloads/">ここ</a>か
+らソース
+コードがダウンロードできます。使用する機種に合わせてダウンロードしてください。<br>
+　注意が必要なのは、Ogg VorbisはOggとVorbisから構成されているため、liboggとlibvorbisの２つが最低必要なことです。過去にリリースされたソースコード全般は<a href="http://downloads.xiph.org/releases/">ここ</a>か
+らダウンロード可能です。ちなみにaoTuV版libvorbisは<a href="http://www.geocities.jp/aoyoume/aotuv/index.html">こ
+ち
+ら</a>からどうぞ。<br>
+　liboggやlibvorbisをインストールする場合、必ずliboggからインストールしてください。libvorbisはliboggを必要とします。それぞれのライブラリの使用方法はlib/doc又は、docディレクトリ下にあるドキュメントを参照してください。ただし、現在の所エンコードの際のドキュメントが用意されていないようなので、エンコーダを作りたい方はoggencのソースコードやexamplesディレクトリ下の"encoder_example.c"などを参考にする必要があります。またdocディレクトリにはフォーマットに関する仕様書が含まれているので、技術的なことに興味のある方は読んでみられてもよいでしょう。<br>
+<br>
+<span style="font-weight: bold;">Q.
+　Ogg
+Vorbisのアルゴリズムを知りたいのですが、何か良い資料はありますか？</span><span style="font-weight: bold;"><br>
+</span>　デコード処理のアルゴリズムはOgg Vorbis仕様書(libvorbisソースコードパッケージの"Vorbis_I_spec")に書かれています。英語の資料ですが、データ構造なども詳しく書いてあるので目を通して損はありません。<br>
+　エンコード処理については公式にはドキュメントが用意されていません。エンコーダはデコーダと違って色々なアルゴリズムが考えられます。デコーダ側がきちんと処理できるデータを出力できればどんな方法・手段を使っても構わないのです。そういった意味で、ちゃんとした資料を作る意味が薄いです。<br>
+　もし、xiph.orgのlibvorbisやその派生ライブラリのエンコードアルゴリズムを理解したいのならば、やはりソースコードを読むことが近道です。　<br>
+&nbsp;<span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
+<hr style="width: 100%; height: 2px;"><span style="font-weight: bold;">(c)2003-2019
+蒼弓 [AOYUMI]</span><br>
+<br>
+</body></html>

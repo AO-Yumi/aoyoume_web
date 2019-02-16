@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head><title>Untitled(5) - Lossy audio format</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="非可逆音声圧縮フォーマットの種類と解説">
+<meta name="keywords" content="Audio,Sound,Ogg,Vorbis,MP3,AAC,AC3,ATRAC">
+<link rel="stylesheet" href="../default.css" type="text/css"></head>
+<body>
+<h1><span style="font-weight: bold;">非可逆音声圧縮フォーマットの種類と解説</span></h1>
+<br>
+<h3>MP3 (MPEG1 Audio layer3)</h3>
+動画の規格策定団体であるMPEG(<span id="contents" style="overflow: hidden; height: auto;">Moving Picture Experts Group)</span>が策定した音声圧縮･伝送のための規格。<br>
+Audio
+layerは３つあり、その中ではもっとも高圧縮な規格である。普及率はNo1であり、多くのA/V関連機器に再生機能が搭載されている。ただし
+MPEGの規格にも関わらず、専らAudioオンリーで使用される。また、MPEG2 Audio BC(Backward
+compatible)としてもほぼ同様の技術が規格化されている。<br>
+<span style="text-decoration: underline; font-weight: bold;">[特徴]</span>
+広く普及しており、多くの機器で再生可能。技術的には今となっては比較的古い部類に属するが、良いエンコーダを使用すれば、今でも十分に通用する音質であ
+り、多くの意味でディファク
+トスタンダード的存在。<br>
+<span style="font-weight: bold; text-decoration: underline;">[付記]</span>
+mp3を拡張したmp3Proや<em></em>MP3 Surroundといったフォーマットがある。これらはmp3と完全では無いものの互換性があるが、
+MPEGの規格ではなく独自拡張フォーマットである。<br>
+<br>
+<h3>Dorby Digital (AC3)</h3>
+音声周りの技術ではパイオニア的存在であるドルビー研究所で作られた規格。<br>
+元々は映画で使うために作られたもので、5ch以上のマルチチャンネル音声に標準で対応している。またDVD-Videoでは標準で再生可能であるが、通
+常音声のみでは用いられずMPEG2による動画とセットで使われる。<br>
+<span style="text-decoration: underline; font-weight: bold;">[特徴]</span>
+DVD-Videoを作る際によく使われる。エンコーダは品質が厳しく管理され、エンコーダ毎の質は安定している。しかし、低いビットレートには向かな
+い。<br>
+<span style="font-weight: bold; text-decoration: underline;">[付記]</span>
+新しい拡張されたバージョンでは低いビットレートへの対応が強化されている。<br>
+<br>
+<h3>WMA (Windows Media Audio)</h3>
+世界最大のソフトウェア会社、マイクロソフトが提供する規格。<br>
+既に多くの携帯オーディオ機器や据え置きプレイヤーにて再生が可能である。最初は2chのみの規格であったが、最新の版では拡張規格を追加し、3ch以上
+のマルチチャンネル、24bit/96KHzのフォーマットへの対応などを図り、家電業界にも売り込みをかける。<br>
+<span style="text-decoration: underline; font-weight: bold;">[特徴]</span>
+Windowsで標準で使用でき、比較的普及率も高い(ただし初期の規格であるstandard以外は、ハードウェアベースの普及率はそれほどでもない)。<br>
+<span style="font-weight: bold; text-decoration: underline;">[付記]</span>
+WMAには幾つかの種類がある。従来のWMA(standard)以外に、Professional(マルチチャンネル対応、上位コーデック)、
+Voice(低ビットレート向けVoiceコーデック)、Lossless(可逆コーデック)がある。これらはWMA9シリーズで追加された。同じWMAの名が冠されているが、これらは別のフォーマットである。<br>
+<br>
+<h3>ATRAC&nbsp;3/3+ (Adaptive Transform Acoustic Coding)</h3>
+ソニーのMDフォーマットに採用されている圧縮規格。<br>
+ATRACには大きく分けて２種類あり、それはATRACとATRAC3である。また、ATRAC3+は特に低いレートに対応するために
+ATRAC3を拡張したものである（とはいえ、3と3+は実質的には別のフォーマットである)。最初のATRACはMDに音声を記録するため、
+CD
+比約1/5に圧縮する、というものだった。ATRAC3は10分の１以下のレートに対応したもので、ATRAC3+は64Kbps以下のビットレートに対応している。それ
+ぞれのATRAC規格は、直接の互換性はない。<br>
+<span style="text-decoration: underline; font-weight: bold;">[特徴]</span>
+家電などに組み込むことを前提に設計されているため、比較的エンコード・デコードが軽い。またMD規格の必須技術であるため、日本での普及率は高い。<br>
+<span style="font-weight: bold; text-decoration: underline;">[付記]</span>
+MD以外ではソニーが積極的に採用している。エンコーダも地道に改良されているようだ。<br>
+<br>
+<h3>AAC (MPEG2/4&nbsp;Advanced Audio Coding)</h3>
+MPEGの規格として採用され、また日本のデジタル放送に採用された圧縮・伝送形式。<br>
+全ての圧縮率において高音質を実現するべく作られた、いわば圧縮音声界のエリートであるが、実装がなかなか伴わず普及率も今一歩だった。その後、
+AppleのiTunesとiPodの普及により広く認知されるようになる。以前のMPEG [BC] Audio (layer
+1/2/3)とは直接の互換性は無い。<br>
+いくつかのバージョンやコンテナの種類によって互換性が保ちにくい問題もあるが、iTunesで採用されているMPEG4コンテナに入ったAAC
+LC-Profileが一般的になりつつある。多くの携帯電話もこの形式をサポートする。<br>
+<span style="text-decoration: underline; font-weight: bold;">[特徴]</span>
+規格としては、まさにMP3の後継といえるもの。より広いサンプリングレート対応、マルチチャンネル対応、そして新しいエンコーディングツールも備える。
+また幾つかのMP3の技術的な制限は取り払われている。<br>
+<span style="font-weight: bold; text-decoration: underline;">[付記]</span>
+AACには元来3つのプロファイルがあり、さらにMPEG4 AACではMPEG4
+Audioで使用できるエンコーディングツールを使用することもできる(実際にはほとんど使われていない)。更にMPEG4
+AACではHE-AAC(aacPlus)などのプロファイルが追加された。HE-AACはAAC
+LC-Profileにmp3Proでも使われているSBR技術を組み合わせたものである。これは、日本では着うたフルで採用されブレイクした。また
+AACはエンコーダなどの実装元が多くあるのも特筆すべき部分である。<br>
+<br>
+<h3>Ogg Vorbis</h3>
+完全にフリーで使えることを謳った音声圧縮技術。<br>
+標準化された技術であったMP3に対して、それが普及した後に特許料を要求する会社が現れたことで、その事態に憂慮した人たちが立ち上げた、
+Xiph.org Foundation
+によって規格化されている。この団体はオープンでフリーなマルチメディアフォーマットの策定・開発を目的としており、Ogg
+Vorbisもその成果の一つと言える。全てのソースコードは公開されているため、専用機以外では比較的容易に圧縮、再生などの利用が可能である。最近で
+はハードウェ
+アプレイ
+ヤーでも対応しているものが増えてきている。<br>
+<span style="text-decoration: underline; font-weight: bold;">[特徴]</span>
+マルチチャンネル・ハイサンプリングレート対応。フォーマットレベルでのギャップレス再生をサポートする。大量のセットアップパラメータ類をファイル側に
+持つ仕様のため柔軟性に富む。弱点としては他のフォーマットよりもデコードに多くのメモ
+リを必要とすることがある。<br>
+<span style="font-weight: bold; text-decoration: underline;">[付記]</span>
+ライセンスの緩さから、主にPCゲームでよく使用される。<br>
+<span style="font-weight: bold; text-decoration: underline;"></span><br>
+<hr style="width: 100%; height: 2px;"><span style="font-weight: bold;">(c)2003-2019
+蒼弓 [AOYUMI]</span><br>
+<br>
+</body></html>
